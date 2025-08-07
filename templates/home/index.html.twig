@@ -1,0 +1,520 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Mballa's Food {% endblock %}
+
+{% block body %}
+
+  <!-- ========================================================================
+    ..............................NAVBAR HTML
+  =========================================================================== -->
+
+  <div class="navbar-background">
+    <div class="navbar-container">
+
+      <!-- La section de gauche contient le logo et le nom du Foodtruck -->
+      <div class="left-section">
+        <img src="{{ asset('img/Navbar-img/logo.jpg') }}" class="brand-img" alt="logo" onclick="showSection('homepage')">
+        <div class="brand-name" onclick="showSection('homepage')">
+          Mballa's Food
+        </div>
+      </div>
+
+      <!-- La section de droite contient le menu -->
+      <div class="right-section">
+        <button class="navbar-btn" onclick="showSection('menu')">Menu</button>
+        <button class="navbar-btn" onclick="showSection('emplacements')">Emplacements</button>
+        <button class="navbar-btn" onclick="showSection('contact')">Contact</button>
+      </div>
+
+      <!-- Mes boutons de menu disparaissent pour laisser place à un menu hamburger sur écrans plus petits -->
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Ajout du JS pour avoir un effet menu déroulant sur ma navbar -->
+      <div class="menu-dropdown">
+        <button onclick="showSection('menu')">Menu</button>
+        <button onclick="showSection('emplacements')">Emplacements</button>
+        <button onclick="showSection('contact')">Contact</a>
+      </div>
+    </div>
+
+    <!-- IMG SEPARATOR -->
+    <div class="container-separator">
+      <img src="{{ asset('img/vector-img/Vector2.png') }}" class="separator" alt="separator">
+    </div>
+
+  </div>
+
+  <!-- ========================================================================
+    ..............................FIN NAVBAR HTML
+  =========================================================================== -->
+
+
+
+
+  <!-- ========================================================================
+    ..............................HOMEPAGE HTML
+  =========================================================================== -->
+
+  <section id="homepage-section">
+    <!-- FIRST SECTION HOMEPAGE -->
+    <div class="colored-div">
+      <div class="first-section-container">
+
+        <!-- LEFT COLUMN OF THE FIRST SECTION -->
+        <div class="first-section-left-side">
+          <div class="first-section-wrapper">
+            <div class="lemon-img-container">
+              <img src="{{ asset('img/vector-img/lemon.png') }}" class="lemon-img" alt="lemon vector">
+            </div>
+            <div class="first-section-brand-name">
+              MBALLA'S FOOD
+            </div>
+            <img src="{{ asset('img/vector-img/line.png') }}">
+          </div>
+
+          <div class="first-section-wrapper-2">
+            <h1 class="first-section-title">
+              Lorem ipsum dolor sit amet consectetur
+            </h1>
+            <div class="first-section-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor consequat netus tristique at sem ipsum
+              fames.
+              Sed
+              a molestie enim ac sed.
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN OF THE FIRST SECTION -->
+        <div class="first-section-right-side">
+          <div class="first-section-right-side-img-container">
+            <img src="{{ asset('img/HomePage-img/foodtruck.jpg') }}" class="first-section-img" alt="foodtruck picture">
+            <div class="right-side-img-vector">
+              <img src="{{ asset('img/vector-img/hatch.png') }}" class="hatch-vector" alt="hatch vector">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMG SEPARATOR -->
+      <div class="first-section-separator-container">
+        <img src="{{ asset('img/vector-img/separator2.svg') }}" class="first-section-separator" alt="separator">
+      </div>
+    </div>
+
+    <!-- SECOND SECTION HOMEPAGE -->
+    <div class="second-section-container">
+
+      <!-- FIRST ROW OF THE SECOND SECTION -->
+      <div class="second-section-first-part">
+        <div class="left-side-container">
+          <div class="left-icon">
+            <img src="{{ asset('img/vector-img/map-pin.svg') }}" class="icon" alt="map pin vector">
+          </div>
+          <div class="content">
+            Où nous trouver
+          </div>
+          <button class="left-side-btn" onclick="showSection('emplacements')">Nos emplacements</button>
+        </div>
+        <div class="left-side-container">
+          <div class="left-icon">
+            <img src="{{ asset('img/vector-img/fork-and-knife.svg') }}" class="icon" alt="fork and knife vector">
+          </div>
+          <div class="content">
+            Découvrez notre menu
+          </div>
+          <button class="left-side-btn" onclick="showSection('menu')">Voir le menu</button>
+        </div>
+      </div>
+
+      <!-- SECOND ROW OF THE SECOND SECTION -->
+      <div class="second-section-second-part">
+        <div class="header-container">
+          <div class="header-text">
+            A PROPOS DE NOUS
+          </div>
+          <img src="{{ asset('img/vector-img/line.png') }}" alt="line vector">
+        </div>
+        <div class="second-section-title">
+          Lorem Ipsum
+        </div>
+        <div class="second-section-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor consequat netus tristique at sem ipsum fames.
+          Sed
+          a molestie enim ac sed. Aliquam sit amet mauris sit amet nisi sodales aliquam eu vel dolor. Nullam et erat
+          nec
+          magna interdum rutrum sed at nisl. Vestibulum sit amet eros in nunc varius mollis
+        </div>
+        <div class="img-container">
+          <img src="{{ asset('img/HomePage-img/AboutMe.jpg') }}" class="second-section-img" alt="owner picture">
+
+          <!-- HATCH VECTOR -->
+          <div class="hatch-container">
+            <img src="{{ asset('img/vector-img/hatch.png') }}" class="hatch-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- IMG SEPARATOR -->
+      <div class="second-section-separator">
+        <img src="{{ asset('img/vector-img/Vector2.png') }}" class="separator-img" alt="separator">
+      </div>
+    </div>
+
+    <!-- THIRD SECTION HOMEPAGE -->
+    <div class="third-section-container">
+      <div class="third-section-header">
+        <div class="third-section-header-name">
+          NOTRE MENU
+        </div>
+        <img src="{{ asset('img/vector-img/line.png') }}" alt="line vector">
+      </div>
+      <div class="third-section-title">
+        Nos menus les plus vendus
+      </div>
+
+      <!-- FIRST ROW OF THE MENU -->
+      <div class="third-section-first-row">
+        <div class="first-row-left-side">
+          <img src="{{ asset('img/HomePage-img/Tiana.jpg') }}" class="food-img" alt="food picture">
+          <div class="first-row-description">
+            <div class="first-row-title">
+              Lorem Ipsum
+            </div>
+            <div class="first-row-content">
+              Nullam at nibh id lacus condimentum ultrices et a massa
+            </div>
+          </div>
+          <div class="first-row-price">
+            $ 15
+          </div>
+        </div>
+        <div class="first-row-left-side">
+          <img src="{{ asset('img/HomePage-img/Tiana.jpg') }}" class="food-img" alt="food picture">
+          <div class="first-row-description">
+            <div class="first-row-title">
+              Lorem Ipsum
+            </div>
+            <div class="first-row-content">
+              Nullam at nibh id lacus condimentum ultrices et a massa
+            </div>
+          </div>
+          <div class="first-row-price">
+            $ 15
+          </div>
+        </div>
+      </div>
+
+      <!-- STAR VECTOR -->
+      <div class="stars-separator">
+        <img src="{{ asset('img/vector-img/stars.svg') }}" class="stars-img" alt="star vector">
+      </div>
+
+      <!-- SECOND ROW OF THE MENU -->
+      <div class="third-section-first-row">
+        <div class="first-row-left-side">
+          <img src="{{ asset('img/HomePage-img/Tiana.jpg') }}" class="food-img" alt="food picture">
+          <div class="first-row-description">
+            <div class="first-row-title">
+              Lorem Ipsum
+            </div>
+            <div class="first-row-content">
+              Nullam at nibh id lacus condimentum ultrices et a massa
+            </div>
+          </div>
+          <div class="first-row-price">
+            $ 15
+          </div>
+        </div>
+        <div class="first-row-left-side">
+          <img src="{{ asset('img/HomePage-img/Tiana.jpg') }}" class="food-img" alt="food picture">
+          <div class="first-row-description">
+            <div class="first-row-title">
+              Lorem Ipsum
+            </div>
+            <div class="first-row-content">
+              Nullam at nibh id lacus condimentum ultrices et a massa
+            </div>
+          </div>
+          <div class="first-row-price">
+            $ 15
+          </div>
+        </div>
+      </div>
+
+      <!-- IMG SEPARATOR -->
+      <div class="separator-3-container">
+        <img src="{{ asset('img/vector-img/separator2.svg') }}" class="separator-3" alt="separator">
+      </div>
+    </div>
+
+
+    <!-- FOURTH SECTION HOMEPAGE -->
+    <div class="fourth-section-background-color">
+      <div class="fourth-section-container">
+        <div class="left-side-text">
+          Lorem Ipsum
+        </div>
+        <div class="right-side-text">
+          dolor site amet
+        </div>
+        <div class="left-side-text">
+          consectetur
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+    ..............................FIN HOMEPAGE HTML
+  =========================================================================== -->
+
+
+
+
+  <!-- ========================================================================
+    ..............................MENU SECTION
+  =========================================================================== -->
+
+  <section id="menu-section">
+    <div class="menu-container">
+
+      <!-- MENU HEADER -->
+      <div class="food-menu-header-container">
+        <div class="food-menu-header-title" id="menu-category-title">
+          Nos Burgers
+        </div>
+        <div class="food-menu-header-content" id="menu-category-content">
+          Chaque burger est servi avec sa <strong> portion de frites croustillantes</strong>, même en dehors des
+          formules.
+          Préparés maison avec des produits locaux de qualité, nos burgers allient générosité et authenticité. Entre
+          pain
+          moelleux, garnitures savoureuses et cuisson maîtrisée, chaque bouchée est un vrai plaisir fait avec passion.
+        </div>
+      </div>
+
+      <!-- MENU INTERACTIVE BUTTONS -->
+      <div class="menu-btns" id="menu-btns-hidden-on-phone">
+        <button onclick="showCategoryMenu('burgers-category')">Nos burgers</button>
+        <button onclick="showCategoryMenu('formulas-category')">Nos formules</button>
+        <button onclick="showCategoryMenu('extras-category')">Nos extras</button>
+      </div>
+
+      <div class="menu-phone-category-container">
+        <!-- UNIQUE BUTTON FOR PHONE -->
+        <div class="menu-btns" id="menu-category-btns" onclick="toggleMenuCategory()">
+          <button>Découvre nos catégories</button>
+        </div>
+
+        <!-- BUTTON DROPDOWN  -->
+        <div id="menu-category-dropdown">
+          <button onclick="showCategoryMenu('burgers-category')">Nos burgers</button>
+          <button onclick="showCategoryMenu('formulas-category')">Nos formules</button>
+          <button onclick="showCategoryMenu('extras-category')">Nos extras</button>
+        </div>
+      </div>
+
+      <!-- BURGERS CATEGORY -->
+      <div class="food-cards-container" id="burgers-category">
+        {% for menu in burgers %}
+          <div class="food-cards">
+            <img src="{{ asset('uploads/images/' ~ menu.image) }}" alt="{{ menu.nom }}" class="food-menu-img">
+            <div class="food-name">{{ menu.nom }}</div>
+            <div class="food-content">{{ menu.description }}</div>
+            <div class="food-price">{{ menu.prix }} €</div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- FORMULAS CATEGORY -->
+      <div class="food-cards-container" id="formulas-category">
+        {% for menu in formules %}
+          <div class="food-cards">
+            <img src="{{ asset('uploads/images/' ~ menu.image) }}" alt="{{ menu.nom }}" class="food-menu-img">
+            <div class="food-name">{{ menu.nom }}</div>
+            <div class="food-content">{{ menu.description }}</div>
+            <div class="food-price">{{ menu.prix }} €</div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- EXTRAS CATEGORY -->
+      <div class="food-cards-container" id="extras-category">
+        {% for menu in extras %}
+          <div class="food-cards">
+            <img src="{{ asset('uploads/images/' ~ menu.image) }}" alt="{{ menu.nom }}" class="food-menu-img">
+            <div class="food-name">{{ menu.nom }}</div>
+            <div class="food-content">{{ menu.description }}</div>
+            <div class="food-price">{{ menu.prix }} €</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+    ..............................FIN MENU SECTION
+  =========================================================================== -->
+
+
+
+
+  <!-- ========================================================================
+    ..............................EMPLACEMENTS SECTION
+  =========================================================================== -->
+
+  <section id="emplacements-section">
+    <div class="emplacements-background">
+      <div class="emplacements-container">
+
+        <!-- EMPLACEMENTS LEFT COLUMN -->
+        <div class="emplacements-left-side">
+          <div class="contact-information">
+            Emplacements et heures de service
+          </div>
+          <div class="emplacements-title">
+            On se retrouve près de chez toi !
+          </div>
+
+         {% if city is not null %}
+            <div class="emplacements-content">
+              Nous sommes présents <strong>{{ city.nom }}</strong>, du lundi au vendredi,
+              sur différents emplacements qui varient chaque jour.
+              Venez nous retrouver entre <strong>{{ city.heureDebut|date('H:i') }}</strong> et 
+              <strong>{{ city.heureFin|date('H:i') }}</strong> pour une pause gourmande !
+            </div>
+          {% else %}
+            <div class="emplacements-content">
+              Les informations générales sur la ville et les horaires ne sont pas encore disponibles.
+            </div>
+          {% endif %}
+          
+          <!-- EMPLACEMENTS AND DAYS -->
+          {# <div class="emplacements-contact-container">
+            <div class="emplacements-contact">
+              <span class="emplacements-days">Lundi :</span> Place de la République
+            </div>
+          </div> #}
+          {% for loc in localisations %}
+            <div class="emplacements-contact-container">
+              <div class="emplacements-contact">
+                <span class="emplacements-days">{{ loc.jour|capitalize }} :</span> {{ loc.lieu }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- EMPLACEMENTS RIGHT COLUMN -->
+        <div class="emplacements-right-side">
+          <img src="{{ asset('img/Emplacements-img/ThinkingMr.png') }}" class="contact-right-side-img" alt="person thinking">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+    ..............................FIN EMPLACEMENTS SECTION
+  =========================================================================== -->
+
+
+
+
+  <!-- ========================================================================
+    ..............................CONTACT SECTION
+  =========================================================================== -->
+
+  <section id="contact-section">
+    <div class="contactform-background">
+      <div class="contactform-container">
+        <div class="contactform-left-side">
+          <div class="contact-information">
+            Besoin de renseignements ?
+          </div>
+          <div class="contactform-title">
+            Contactez-nous
+          </div>
+          <div class="contactform-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor consequat netus tristique at sem ipsum fames.
+            Sed a molestie enim ac sed. Aliquam sit amet mauris.
+          </div>
+          <div class="contactform-contact-container">
+            <img src="{{ asset('img/vector-img/map-pin2.svg') }}" class="contactform-small-img" alt="map pin vector">
+            <div class="contactform-contact">
+              1 Rue du Test, 00100 Test
+            </div>
+          </div>
+          <div class="contactform-contact-container">
+            <img src="{{ asset('img/vector-img/phone2.svg') }}" class="contactform-small-img" alt="phone vector">
+            <div class="contactform-contact">
+              +33 0 00 00 00 00
+            </div>
+          </div>
+          <div class="contactform-contact-container">
+            <img src="{{ asset('img/vector-img/mail2.svg') }}" class="contactform-small-img" alt="email vector">
+            <a href="mailto:test@test.com" class="contactform-contact">
+              email@email.com
+            </a>
+          </div>
+        </div>
+        <div class="contactform-right-side">
+          <img src="{{ asset('img/Contact-img/person-eating.png') }}" class="contact-right-side-img" alt="person eating a burger">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+    ..............................FIN CONTACT SECTION
+  =========================================================================== -->
+
+
+
+
+  <!-- ========================================================================
+    ..............................FOOTER HTML
+  =========================================================================== -->
+
+  <footer class="footer-background" id="footer-section">
+
+    <!-- IMG SEPARATOR -->
+    <div class="footer-separator-container">
+      <img src="{{ asset('img/vector-img/separator2.svg') }}" class="footer-separator" id="footer-section-separator" alt="separator">
+    </div>
+
+    <!-- FOOTER CONTAINER -->
+    <div class="footer-container">
+
+      <!-- FOOTER LEFT COLUMN -->
+      <div class="footer-left-side">
+        <div class="footer-copyright">
+          © 2025 Mballa’s Food. Tous droits réservés.
+        </div>
+        <div>
+          <a href="#" class="footer-link">
+            Mentions légales</a>
+        </div>
+        <div class="footer-socialmedia">
+          <img src="{{ asset('img/vector-img/instagram.svg') }}" class="instagram-icon" alt="instagram logo">
+          <a href="#" class="footer-link">Instagram</a>
+        </div>
+      </div>
+
+      <!-- FOOTER RIGHT COLUMN -->
+      <div class="footer-right-side">
+        <div class="footer-name">Mballa’s Food</div>
+        <div class="footer-line">00.00.00.00.00</div>
+        <a href="mailto:email@email.com" class="footer-line">email@email.com</a>
+        <div class="footer-line">1 rue lorem ipsum dolor sit</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+    ..............................FIN FOOTER HTML
+  =========================================================================== -->
+
+{% endblock %}

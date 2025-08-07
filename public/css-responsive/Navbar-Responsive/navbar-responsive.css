@@ -1,0 +1,61 @@
+/************************************************* NAVBAR RESPONSIVE CSS */
+
+/* CSS 1000PX */
+@media (max-width: 1000px) {
+  .brand-img {
+    width: 90px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+    width: 100px;
+  }
+
+  .navbar-btn {
+    font-size: 18px;
+    padding: 10px 28px;
+  }
+
+  .right-section {
+    column-gap: 30px;
+  }
+}
+
+/* CSS 900PX  */
+@media (max-width: 900px) {
+  .brand-img {
+    width: 80px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .navbar-btn {
+    font-size: 16px;
+  }
+
+  .right-section {
+    column-gap: 25px;
+  }
+}
+
+/* CSS 840PX */
+@media (max-width: 840px) {
+  .right-section {
+    display: none;
+  }
+
+  .navbar-container {
+    padding-bottom: 10px;
+  }
+
+  .left-section {
+    flex: 1;
+  }
+
+  .hamburger-menu {
+    display: block !important;
+    margin-right: 20px;
+  }
+}

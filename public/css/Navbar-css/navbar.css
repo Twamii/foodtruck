@@ -1,0 +1,135 @@
+.navbar-container {
+  box-sizing: border-box;
+  max-width: 1440px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 20px;
+}
+
+.navbar-background {
+  background-color: white;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.brand-img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.brand-name {
+  max-width: 150px;
+
+  font-family: "Ultra", serif;
+  font-size: 22px;
+  color: #072588;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  column-gap: 40px;
+}
+
+.navbar-btn {
+  background-color: #072588;
+  border: 5px solid #07258800;
+  border-radius: 10px;
+  text-decoration: none;
+
+  font-family: "Ultra", serif;
+  font-size: 20px;
+  color: white;
+
+  padding: 12px 30px;
+
+  transition: opacity 0.15s,
+  background-color 0.15s,
+  border 0.15s,
+  color 0.15s
+  ;
+
+  cursor: pointer;
+}
+
+.navbar-btn:hover {
+  border: 5px solid #072588;
+  background-color: white;
+  color:#072588;
+}
+
+.navbar-btn:active {
+  opacity: 0.8;
+}
+
+/* CSS HAMBURGER MENU FOR MOBILE */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #072588;
+  margin: 5px 0;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  z-index: 2;
+}
+
+.menu-dropdown button {
+  display: block;
+  padding: 10px;
+
+  border: none;
+  background-color: white;
+  color: #072588;
+
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+/* CSS FOR THE NAVBAR SEPARATOR */
+.container-separator {
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+}
+
+.separator {
+  animation: waveMotion 6s ease-in-out infinite;
+}
+
+@keyframes waveMotion {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}
+/* END OF CSS FOR THE NAVBAR SEPARATOR */

@@ -1,0 +1,429 @@
+/************************************************* FIRST SECTION RESPONSIVE CSS */
+
+/* CSS 1200PX */
+@media (max-width: 1200px) {
+  .first-section-container {
+    column-gap: 40px;
+  }
+
+  .first-section-wrapper-2 {
+    max-width: 550px;
+  }
+
+  .first-section-title {
+    font-size: 62px;
+  }
+
+  .first-section-content {
+    font-size: 18px;
+    max-width: 430px;
+  }
+
+  .lemon-img {
+    width: 84px;
+  }
+
+  .first-section-img {
+    width: 400px;
+    height: 524px;
+  }
+
+  .hatch-vector {
+    width: 176px;
+  }
+}
+
+/* CSS 1024PX */
+@media (max-width: 1024px) {
+
+  .first-section-wrapper-2 {
+    max-width: 500px;
+  }
+
+  .first-section-title {
+    font-size: 56px;
+  }
+
+  .first-section-content {
+    font-size: 16px;
+    max-width: 390px;
+  }
+
+  .lemon-img {
+    width: 74px;
+  }
+
+  .first-section-img {
+    width: 350px;
+    height: 474px;
+  }
+
+  .hatch-vector {
+    width: 166px;
+  }
+}
+
+/* CSS 930PX */
+@media (max-width: 930px) {
+
+  .first-section-container {
+    column-gap: 30px;
+  }
+
+  .first-section-wrapper-2 {
+    max-width: 450px;
+  }
+
+  .first-section-title {
+    font-size: 48px;
+  }
+
+  .first-section-content {
+    max-width: 350px;
+  }
+
+  .lemon-img {
+    width: 64px;
+  }
+
+  .first-section-img {
+    width: 300px;
+    height: 424px;
+  }
+
+  .hatch-vector {
+    width: 156px;
+  }
+}
+
+/* CSS 800PX */
+@media (max-width: 800px) {
+  .first-section-container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  .first-section-left-side {
+    margin-top: 0;
+  }
+
+  .first-section-title,
+  .first-section-content {
+    text-align: center;
+    max-width: none;
+  }
+}
+
+/* CSS 500PX */
+@media (max-width: 500px) {
+  .first-section-wrapper-2 {
+    max-width: 350px;
+  }
+
+  .first-section-title {
+    font-size: 38px;
+  }
+
+  .first-section-content {
+    font-size: 16px;
+    max-width: 340px;
+  }
+
+  .lemon-img {
+    width: 54px;
+  }
+
+  .lemon-img-container {
+    top: 0px;
+    right: 80px;
+  }
+
+  .first-section-img {
+    width: 270px;
+    height: 394px;
+  }
+
+  .hatch-vector {
+    width: 146px;
+  }
+}
+
+/* CSS 360PX */
+@media (max-width: 400px) {
+  
+  .first-section-title {
+    font-size: 30px;
+  }
+
+  .lemon-img-container {
+    right: 60px;
+  }
+
+  .first-section-img {
+    width: 240px;
+    height: 364px;
+  }
+
+  .hatch-vector {
+    width: 126px;
+  }
+
+  .right-side-img-vector {
+    bottom: -20px;
+    left: -50px;
+  }
+}
+
+/************************************************* SECOND SECTION RESPONSIVE CSS */
+
+/* CSS 840PX */
+@media (max-width: 840px) {
+
+  .second-section-first-part {
+    column-gap: 80px;
+  }
+
+  .icon {
+    width: 25px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .left-side-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .second-section-title {
+    font-size: 38px;
+  }
+
+  .second-section-content {
+    font-size: 16px;
+    max-width: 620px;
+  }
+
+  .second-section-img {
+    width: 600px;
+    height: 600px;
+
+    border-radius: 30%;
+  }
+}
+
+/* CSS 660PX */
+@media (max-width: 660px) {
+  .second-section-first-part {
+    column-gap: 60px;
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  .left-side-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .second-section-title {
+    font-size: 32px;
+  }
+
+  .second-section-content {
+    max-width: 540px;
+  }
+
+  .second-section-img {
+    width: 500px;
+    height: 500px;
+
+    border-radius: 30%;
+  }
+
+}
+
+/* CSS 560PX */
+@media (max-width: 560px) {
+  .second-section-first-part {
+    flex-direction: column;
+    row-gap: 35px;
+  }
+
+  .left-side-container {
+    row-gap: 10px;
+  }
+
+  .second-section-content {
+    max-width: 400px;
+  }
+
+  .second-section-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .hatch-img {
+    width: 150px;
+  }
+}
+
+/* CSS 424PX */
+@media (max-width: 424px) {
+  .second-section-content {
+    max-width: 350px;
+  }
+
+  .second-section-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* CSS 360PX */
+@media (max-width: 360px) {
+  .second-section-content {
+    max-width: 320px;
+  }
+
+  .second-section-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hatch-img {
+    width: 120px;
+  }
+}
+
+/************************************************* THIRD SECTION RESPONSIVE CSS */
+
+/* CSS 1100PX */
+@media (max-width: 1100px) {
+  .third-section-title {
+    font-size: 40px;
+    max-width: 500px;
+  }
+
+  .first-row-left-side {
+    padding: 30px 40px;
+  }
+
+  .food-img {
+    max-width: 150px;
+  }
+
+  .first-row-title {
+    font-size: 20px;
+  }
+
+  .first-row-content {
+    font-size: 16px;
+  }
+}
+
+/* CSS 940PX */
+@media (max-width: 940px) {
+  .third-section-title {
+    font-size: 30px;
+  }
+
+  .third-section-first-row {
+    column-gap: 50px;
+  }
+
+  .food-img {
+    max-width: 125px;
+  }
+
+  .first-row-description {
+    max-width: 250px;
+  }
+
+  .stars-img {
+    width: 120px;
+  }
+}
+
+/* CSS 748PX */
+@media (max-width: 748px) {
+  .third-section-first-row {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 50px;
+  }
+}
+
+/* CSS 430PX */
+@media (max-width: 430px) {
+  .third-section-title {
+    font-size: 22px;
+    max-width: 300px;
+  }
+
+  .first-row-left-side {
+    padding: 25px 35px;
+  }
+  
+  .food-img {
+    max-width: 110px;
+  }
+
+  .first-row-description {
+    max-width: 200px;
+  }
+}
+
+/************************************************* FOURTH SECTION RESPONSIVE CSS */
+
+/* CSS 970PX */
+@media (max-width: 970px) {
+  .left-side-text,
+  .right-side-text {
+    font-size: 60px;
+  }
+}
+
+/* CSS 850PX */
+@media (max-width: 850px) {
+  .left-side-text,
+  .right-side-text {
+    font-size: 50px;
+  }
+}
+
+/* CSS 700PX */
+@media (max-width: 700px) {
+  .left-side-text,
+  .right-side-text {
+    font-size: 40px;
+  }
+}
+
+/* CSS 600PX */
+@media (max-width: 600px) {
+  .left-side-text,
+  .right-side-text {
+    font-size: 35px;
+  }
+}
+
+/* CSS 500PX */
+@media (max-width: 500px) {
+  .left-side-text,
+  .right-side-text {
+    font-size: 30px;
+  }
+}
+
+/* CSS 460PX */
+@media (max-width: 460px) {
+  .left-side-text,
+  .right-side-text {
+    font-size: 25px;
+  }
+}

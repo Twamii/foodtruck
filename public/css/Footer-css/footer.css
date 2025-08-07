@@ -1,0 +1,79 @@
+/************************************************* FOOTER CSS */
+.footer-background {
+  background-color: #F9EFE6;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* CSS FOR THE FOOTER SEPARATOR */
+.footer-separator-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+}
+
+.footer-separator {
+  animation: waveMotion2 6s ease-in-out infinite;
+  position: absolute;
+  top: -1px;
+}
+
+@keyframes waveMotion2 {
+  0%   { transform: scaleY(-1) translateY(0px); }
+  50%  { transform: scaleY(-1) translateY(20px); }
+  100% { transform: scaleY(-1) translateY(0px); }
+}
+/* END OF THE FOOTER SEPARATOR CSS */
+
+.footer-container {
+  box-sizing: border-box;
+  padding: 20px 20px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-link {
+  font-family: "Ultra", serif;
+  font-size: 18px;
+  color: #072588;
+  text-decoration: none;
+}
+
+.footer-socialmedia {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.instagram-icon {
+  width: 25px;
+}
+
+.footer-right-side {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-name {
+  font-family: "Ultra", serif;
+  font-size: 18px;
+  color: #072588;
+  margin-bottom: 10px;
+}
+
+.footer-line {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #072588;
+  text-decoration: none;
+}

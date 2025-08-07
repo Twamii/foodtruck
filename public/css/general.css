@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* background-color: rgb(226, 226, 226); */
+  /* background-color: rgb(200, 231, 252); */
+  background-color: rgb(228, 239, 248);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* JS DYNAMIC PAGES */
+
+#menu-section,
+#emplacements-section,
+#contact-section {
+  display: none;
+}

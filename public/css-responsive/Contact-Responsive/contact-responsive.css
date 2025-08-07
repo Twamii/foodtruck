@@ -1,0 +1,73 @@
+/* CSS 900PX */
+@media (max-width: 900px) {
+  .contact-information {
+    font-size: 18px;
+  }
+
+  .contactform-title {
+    font-size: 28px;
+  }
+
+  .contactform-content,
+  .contactform-contact {
+    font-size: 16px;
+  }
+
+  .contactform-content {
+    max-width: 450px;
+  }
+
+  .contact-right-side-img {
+    width: 450px;
+  }
+}
+
+/* CSS 840PX */
+@media (max-width: 840px) {
+  .contactform-container {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .contactform-contact-container {
+    padding-left: 100px;
+  }
+}
+
+/* CSS 560PX */
+@media (max-width: 560px) {
+
+  .contactform-title {
+    font-size: 24px;
+  }
+
+  .contactform-content {
+    max-width: 350px;
+  }
+
+  .contact-right-side-img {
+    width: 350px;
+  }
+
+  .contactform-small-img {
+    width: 30px;
+  }
+
+  .contactform-contact-container {
+    padding-left: 60px;
+  }
+}
+
+/* CSS 410PX */
+@media (max-width: 410px) {
+  .contact-right-side-img {
+    width: 250px;
+  } 
+}
+
+@media (max-width: 380px) {
+    .contactform-contact-container {
+    padding-left: 50px;
+  }
+}

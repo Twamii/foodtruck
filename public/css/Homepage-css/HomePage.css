@@ -1,0 +1,459 @@
+/************************************************* FIRST SECTION CSS */
+.colored-div {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F9EFE6;
+}
+
+.first-section-container {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.first-section-left-side {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 30px;
+  margin-top: 130px;
+}
+
+.first-section-wrapper {
+  position: relative;
+}
+
+/* LEMON VECTOR CSS */
+.lemon-img-container {
+  position: absolute;
+
+  top: -30px;
+  right: 150px;
+}
+
+.lemon-img {
+  width: 94px;
+  animation: roll 4s ease-in-out infinite alternate;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-100px) rotate(-360deg);
+  }
+}
+/* END OF LEMON VECTOR CSS */
+
+.first-section-brand-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #072588;
+}
+
+.first-section-wrapper-2 {
+  max-width: 646px;
+  max-height: 291px;
+}
+
+.first-section-title {
+  font-family: "Ultra", serif;
+  font-size: 72px;
+  color: #072588;
+  margin: 0;
+
+  line-height: 98%;
+}
+
+.first-section-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #072588;
+
+  max-width: 483px;
+}
+
+.first-section-right-side-img-container {
+  display: flex;
+  position: relative;
+}
+
+.first-section-img {
+  width: 476px;
+  height: 600px;
+
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.right-side-img-vector {
+  position: absolute;
+  bottom: -40px;
+  left: -80px;
+}
+
+/* CSS FOR THE HATCH VECTOR */
+.hatch-vector {
+  width: 186px;
+  animation: hatchAnimation 5s ease-in-out infinite;
+}
+
+@keyframes hatchAnimation {
+  0% {
+    clip-path: inset(0% 0% 100% 0%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  60% {
+    clip-path: inset(0% 0% 0% 0%);
+    opacity: 1;
+  }
+  100% {
+    clip-path: inset(100% 0% 0% 0%);
+    opacity: 0;
+  }
+}
+/* END OF CSS FOR THE HATCH VECTOR */
+
+
+/* CSS FOR THE FIRST SECTION SEPARATOR */
+.first-section-separator-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  height: 50px;
+}
+
+.first-section-separator {
+  position: absolute;
+  bottom: -1px;
+  animation: waveMotion 6s ease-in-out infinite;
+}
+/* END OF CSS FOR THE FIRST SECTION SEPARATOR */
+
+
+/************************************************* SECOND SECTION CSS */
+.second-section-container {
+  box-sizing: border-box;
+  max-width: 1440px;
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.second-section-first-part {
+  display: flex;
+  justify-content: center;
+  column-gap: 150px;
+  align-items: center;
+
+  margin: 0 auto;
+
+}
+
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.left-icon {
+  background-color: #072588;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  color: white !important;
+  padding: 10px;
+}
+
+.content {
+  font-family: "Ultra", serif;
+  font-size: 24px;
+  color: #072588;
+}
+
+.left-side-btn {
+  border: 5px solid #07258800;
+  background-color: #072588;
+  color: white;
+  font-family: "Ultra", serif;
+  font-size: 20px;
+  
+  border-radius: 10px;
+  padding: 12px 30px;
+
+  cursor: pointer;
+
+  transition: opacity 0.15s,
+    background-color 0.15s,
+    border 0.15s,
+    color 0.15s
+  ;
+}
+
+.left-side-btn:hover {
+  border: 5px solid #072588;
+  background-color: white;
+  color:#072588;
+}
+
+.left-side-btn:active {
+  opacity: 0.8;
+}
+
+/* SECOND PART CSS */
+.second-section-second-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+  margin-top: 80px; 
+}
+
+.header-text {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #072588;
+}
+
+.second-section-title {
+  font-family: "Ultra", serif;
+  font-size: 48px;
+  color: #072588;
+
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.second-section-content {
+  max-width: 780px;
+
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #072588;
+}
+
+.img-container {
+  margin-top: 40px;
+  margin-bottom: 100px;
+
+  display: flex;
+  position: relative;
+}
+
+.second-section-img {
+  width: 700px;
+  height: 700px;
+
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+
+  border-radius: 30%;
+}
+
+.hatch-container {
+  position: absolute;
+  bottom: -20px;
+}
+
+.hatch-img {
+  animation: hatchAnimation 5s ease-in-out infinite;
+}
+
+/* CSS FOR THE SECOND SECTION SEPARATOR */
+.second-section-separator {
+  display: flex;
+}
+
+.separator-img {
+  animation: waveMotion 6s ease-in-out infinite;
+}
+
+/* END OF CSS FOR THE SECOND SECTION SEPARATOR */
+
+
+/************************************************* THIRD SECTION CSS */
+.third-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  padding-top: 30px;
+
+  background-color: #F9EFE6;
+  max-width: 1440px;
+}
+
+.third-section-header {
+  margin-bottom: 20px;
+}
+
+.third-section-header-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #072588;
+}
+
+.third-section-title {
+  max-width: 774px;
+  margin-bottom: 50px;
+
+  font-family: "Ultra", serif;
+  font-size: 48px;
+  color: #072588;
+
+  text-align: center;
+}
+
+.third-section-first-row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  column-gap: 100px;
+}
+
+.first-row-left-side {
+  background-color: white;
+  padding: 40px 70px;
+  border-radius: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 30px;
+}
+
+.food-img {
+  max-width: 200px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.first-row-description {
+  max-width: 319px;
+}
+
+.first-row-title {
+  font-family: "Ultra", serif;
+  font-size: 24px;
+  color: #072588;
+}
+
+.first-row-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #072588;
+}
+
+.first-row-price {
+  background-color: #072588;
+  color: white;
+  font-family: "Ultra", serif;
+
+  padding: 8px 20px;
+  border-radius: 100px;
+}
+
+/* CSS FOR THE STARS VECTOR */
+.stars-separator {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.stars-img {
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+/* END OF CSS FOR THE STARS VECTOR */
+
+
+/* CSS FOR THE THIRD SECTION SEPARATOR */
+.separator-3-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+
+  height: 50px;
+}
+
+.separator-3 {
+  position: absolute;
+  bottom: -1px;
+  animation: waveMotion 6s ease-in-out infinite;
+}
+/* END OF CSS FOR THE THIRD SECTION SEPARATOR */
+
+
+/************************************************* FOURTH SECTION CSS */
+.fourth-section-background-color {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+.fourth-section-container {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.left-side-text,
+.right-side-text {
+  display: flex;
+  width: 100%;
+  font-family: "Ultra", serif;
+  font-size: 72px;
+  color: #072588;
+}
+
+.left-side-text {
+  justify-content: flex-start;
+}
+
+.right-side-text {
+  justify-content: flex-end;
+}

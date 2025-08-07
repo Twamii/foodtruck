@@ -1,0 +1,27 @@
+/************************************************* FOOTER RESPONSIVE CSS */
+
+/* CSS 800PX */
+@media (max-width: 800px) {
+  .footer-copyright,
+  .footer-link,
+  .footer-name,
+  .footer-line {
+    font-size: 16px;
+  }
+}
+
+/* CSS 600PX */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .footer-left-side {
+    text-align: center;
+  }
+
+  .footer-socialmedia {
+    justify-content: center;
+  }
+}

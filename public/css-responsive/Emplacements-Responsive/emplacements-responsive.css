@@ -1,0 +1,64 @@
+/*********************************************EMPLACEMENTS  RESPONSIVE CSS */
+
+/* CSS 900PX */
+@media (max-width: 960px) {
+  .contact-information {
+    font-size: 18px;
+  }
+
+  .emplacements-title {
+    font-size: 28px;
+  }
+
+  .emplacements-content,
+  .emplacements-contact {
+    font-size: 16px;
+  }
+
+  .emplacements-content {
+    max-width: 450px;
+  }
+
+  .contact-right-side-img {
+    width: 450px;
+  }
+}
+
+/* CSS 780PX */
+@media (max-width: 850px) {
+  .emplacements-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .emplacements-content {
+   margin: 0 auto;
+  }
+}
+
+/* CSS 560PX */
+@media (max-width: 560px) {
+
+  .emplacements-title {
+    font-size: 24px;
+  }
+
+  .emplacements-content {
+    max-width: 350px;
+  }
+
+  .contact-right-side-img {
+    width: 350px;
+  }
+
+  .emplacements-small-img {
+    width: 30px;
+  }
+}
+
+/* CSS 410PX */
+@media (max-width: 410px) {
+  .contact-right-side-img {
+    width: 250px;
+  }
+}

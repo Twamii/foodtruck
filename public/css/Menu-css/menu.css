@@ -1,0 +1,191 @@
+/************************************************* MENU CSS */
+
+.menu-container {
+  box-sizing: border-box;
+  background-color: #F9EFE6;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 40px 20px;
+}
+
+.food-menu-header-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  align-items: center;
+}
+
+.food-menu-header-title {
+  font-family: "Ultra", serif;
+  font-size: 48px;
+  color: #072588;
+}
+
+.food-menu-header-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #072588;
+
+  max-width: 1000px;
+  text-align: center;
+
+  padding-bottom: 50px;
+}
+
+.menu-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 30px;
+}
+
+.menu-btns button {
+  background-color: #072588;
+  border: 5px solid #07258800;
+  border-radius: 10px;
+  text-decoration: none;
+
+  font-family: "Ultra", serif;
+  font-size: 20px;
+  color: white;
+
+  padding: 12px 30px;
+  cursor: pointer;
+
+  transition: opacity 0.15s,
+  background-color 0.15s,
+  border 0.15s,
+  color 0.15s
+  ;
+}
+
+.menu-btns button:hover {
+  border: 5px solid #072588;
+  background-color: white;
+  color:#072588;
+}
+
+.menu-btns button:active {
+  opacity: 0.8;
+}
+
+
+/* PHONE CATEGORY BUTTONS CSS */
+.menu-phone-category-container {
+  display: flex;
+
+  justify-content: center;
+  position: relative;
+}
+
+#menu-category-btns {
+  display: none;
+}
+
+#menu-category-dropdown {
+  display: none;
+
+  flex-direction: column;
+  row-gap: 10px;
+
+  position: absolute;
+  top: 50px;
+
+  background-color: white;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#menu-category-dropdown button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color:#072588;
+
+  padding: 15px 35px;
+}
+
+#menu-category-dropdown button:active {
+  background-color: #f0f0f0;
+}
+/* END OF PHONE CATEGORY BUTTONS CSS */
+
+
+#menu-category-dropdown button {
+  border: none;
+  background-color: white;
+}
+
+.food-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  column-gap: 30px;
+  row-gap: 50px;
+
+  padding-top: 100px;
+  text-align: center;
+
+}
+
+.food-cards {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  row-gap: 30px;
+
+  width: 446px;
+}
+
+.food-menu-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.food-name {
+  font-family: "Ultra", serif;
+  font-size: 24px;
+  color: #072588;
+
+  max-width: 300px;
+}
+
+.food-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #072588;
+  max-width: 350px;
+}
+
+.food-price {
+  background-color: #072588;
+  color: white;
+  font-family: "Ultra", serif;
+  font-size: 16px;
+
+  padding: 8px 20px;
+  border-radius: 100px;
+}
+
+/* MENU JS DYNAMISME CSS */
+
+#formulas-category {
+  display: none;
+}
+
+#extras-category {
+  display: none;
+}

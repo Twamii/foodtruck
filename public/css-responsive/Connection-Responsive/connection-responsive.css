@@ -1,0 +1,27 @@
+@media (max-width: 530px) {
+  .connection-logo-brand-name {
+    font-size: 20px;
+  }
+
+  .connection-logo-img,
+  .connection-logo-img-2 {
+  width: 60px;
+  }
+
+  .connection-text {
+    font-size: 16px;
+  }
+
+  .line-decoration {
+    max-width: 70px;
+  }
+
+  .input-connection-form {
+    width: 300px;
+  }
+
+  .connection-already {
+    width: 300px;
+    text-align: center;
+  }
+}
